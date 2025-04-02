@@ -1,13 +1,15 @@
 import React from 'react';
 
 const ResultDisplay = ({ prediction }) => {
-    if (!prediction) return <p>No classification yet.</p>;
+    if (!prediction) {
+        return <p>No prediction available.</p>;
+    }
 
     return (
         <div>
             <h2>Classification Result</h2>
-            <p><strong>Prediction:</strong> {prediction.prediction}</p>
-            <p><strong>Confidence:</strong> {Math.round(prediction.confidence * 100)}%</p>
+            <p><strong>Damage Level:</strong> {prediction.prediction}</p>
+            <p><strong>Confidence:</strong> {(prediction.confidence * 100).toFixed(2)}%</p>
         </div>
     );
 };
