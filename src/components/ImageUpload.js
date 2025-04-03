@@ -66,3 +66,4 @@ const ImageUpload = ({ onPrediction }) => {
 };
 
 export default ImageUpload;
+
