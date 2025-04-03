@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream:src/App.js
 import React, { useState } from 'react';
 import ImageUpload from './components/ImageUpload';
 import ResultDisplay from './components/ResultDisplay';
@@ -23,7 +22,7 @@ function App() {
 }
 
 export default App;
-=======
+
 import React, { useState } from 'react';
 import ImageUpload from './components/ImageUpload';
 import ResultDisplay from './components/ResultDisplay';
@@ -47,4 +46,4 @@ function App() {
 }
 
 export default App;
->>>>>>> Stashed changes:src/app.js
+
