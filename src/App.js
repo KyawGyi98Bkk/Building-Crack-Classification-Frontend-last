@@ -6,15 +6,14 @@ import './App.css';
 function App() {
   const [prediction, setPrediction] = useState(null);
 
-  // Handle the prediction data coming from the backend
   const handlePrediction = (data) => {
-    console.log("Prediction received in App:", data); // Debugging line
-    setPrediction(data);
+    console.log("✅ Data received from backend:", data);
+    setPrediction(data); // Set the actual response, not just prediction field
   };
 
   return (
     <div className="App">
-      <h1>Building Crack Classification</h1>
+      <h1>🏗️ Building Crack Classifier</h1>
       <ImageUpload onPrediction={handlePrediction} />
       {prediction && <ResultDisplay prediction={prediction} />}
     </div>
